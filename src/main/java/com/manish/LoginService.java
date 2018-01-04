@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
+ * Uses SpringBoot provided metric classes, which wrap the statsD java client.
  * Created by mmaheshwari on 03/01/18.
  */
 @Service
@@ -35,4 +36,5 @@ public class LoginService {
         return "Hello from Server.";
 
     }
+
 }

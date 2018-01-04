@@ -1,4 +1,4 @@
-This is a sample project to demonstrate exporting of metrics to statsD server.
+This is a sample project to demonstrate exporting of metrics. It has three service classes, each of which uses a different mechanism to export the metrics.
 
 Running statsD Server
 ====
@@ -26,4 +26,6 @@ Things to Observe
 ===
 1. `java-statsd-client` must be included as a dependency in gradle.
 2. `StatsdMetricWriter` bean is made available.
-3. Observe the `CounterService` and `GaugeService` usage in `LoginService`
+3. Observe the `CounterService` and `GaugeService` usage in `LoginService`, which are SpringBoot wrappers
+4. Observe the usage of statsD java client API in `RefreshService`
+5. Observe the usage of Dropwizard metrics API in `LogoutService`, to report JMX metrics

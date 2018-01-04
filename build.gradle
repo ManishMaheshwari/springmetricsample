@@ -26,7 +26,9 @@ repositories {
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-actuator')
 	compile('org.springframework.boot:spring-boot-starter-web')
-	compile group: 'com.timgroup', name: 'java-statsd-client', version: '3.1.0'
+	compile('com.timgroup:java-statsd-client:3.1.0')
+	compile('com.codahale.metrics:metrics-core:3.0.2')
+	compile('com.codahale.metrics:metrics-jvm:3.0.2')
 
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
